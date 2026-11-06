@@ -24,10 +24,7 @@ export function ConsultationForm() {
      const { register, handleSubmit, formState: { errors }, reset } = useForm<ConsultationFormValues>();
 
      const onSubmit = async (data: ConsultationFormValues) => {
-          if (!data.consent) {
-               alert("You must provide consent to proceed.");
-               return;
-          }
+          
 
           setIsSubmitting(true);
           setSubmitStatus("idle");
@@ -119,21 +116,14 @@ export function ConsultationForm() {
                     error={errors.message?.message}
                />
 
-               <div className="pt-2">
-                    <Checkbox
-                         id="consent"
-                         label="I consent to having this website store my submitted information so they can respond to my inquiry. *"
-                         {...register("consent", { required: "You must provide consent" })}
-                    />
-                    {errors.consent && <span className="text-xs text-[var(--error)] mt-1 block">{errors.consent.message}</span>}
-               </div>
+               
 
                {submitStatus === "error" && (
                     <p className="text-sm text-[var(--error)]">Failed to send request. Please try again.</p>
                )}
 
                <Button type="submit" variant="primary" className="w-full h-14 text-lg bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white" disabled={isSubmitting}>
-                    {isSubmitting ? "Submitting..." : "Request a Claim"}
+                    {isSubmitting ? "Submitting..." : "Submit"}
                </Button>
           </form>
      );
