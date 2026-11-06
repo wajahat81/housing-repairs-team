@@ -45,10 +45,7 @@ export async function POST(request: Request) {
                 <th style="text-align: left; padding: 12px; border-bottom: 1px solid #E2E8F0; background: #F1F5F9; color: #475569;">Message</th>
                 <td style="padding: 12px; border-bottom: 1px solid #E2E8F0; color: #0F172A;">${data.message}</td>
               </tr>
-              <tr>
-                <th style="text-align: left; padding: 12px; border-bottom: 1px solid #E2E8F0; background: #F1F5F9; color: #475569;">Consent Given</th>
-                <td style="padding: 12px; border-bottom: 1px solid #E2E8F0; color: #0F172A;">${data.consent ? 'Yes' : 'No'}</td>
-              </tr>
+              
             </table>
             <p style="text-align: center; font-size: 12px; color: #94A3B8; margin-top: 30px;">
               This email was sent from the Consultation form on the Housing Repairs Team website.
