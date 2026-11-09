@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { Navbar } from "@/components/layout/Navbar";
 import "./globals.css";
 import { Footer } from "@/components/layout/Footer";
@@ -121,6 +122,7 @@ gtag('config', 'G-DZ5SNSKGW1');`}
           {children}
         </div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
