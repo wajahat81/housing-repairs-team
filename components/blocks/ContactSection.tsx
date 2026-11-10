@@ -26,7 +26,7 @@ export function ContactSection({ id }: { id?: string }) {
                 <h4 className="text-sm font-medium text-[var(--foreground-muted)] uppercase tracking-wider mb-2">Office</h4>
                 <p className="text-lg text-[var(--primary)] leading-relaxed">
                   <b>Housing Repairs Team Ltd<br />Office 20839, 182-184 High Street North
-                    East Ham<br />London, UK<br />E6 2JA<br />Phone: +44 330 174 7690</b>
+                    East Ham<br />London, UK<br />E6 2JA<br />Phone: +44 330 174 5841</b>
                 </p>
               </div>
             </div>
